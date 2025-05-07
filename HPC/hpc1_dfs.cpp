@@ -52,3 +52,6 @@ int main() {
 
     return 0;
 }
+
+// Compile with: g++ -fopenmp hpc1_dfs.cpp
+// Run with: ./a.out or ./a.exe

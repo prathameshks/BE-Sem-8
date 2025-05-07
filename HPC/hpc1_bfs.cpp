@@ -50,3 +50,6 @@ int main() {
     cout << "Number of threads used: " << omp_get_max_threads() << endl;
     return 0;
 }
+
+// Compile with: g++ -fopenmp hpc1_bfs.cpp
+// Run with: ./a.out or ./a.exe

@@ -53,3 +53,6 @@ int main() {
 
     return 0;
 }
+
+// Compile with: g++ -fopenmp hpc2_bubble_sort.cpp
+// Run with: ./a.out or ./a.exe
