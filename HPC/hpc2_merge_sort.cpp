@@ -53,7 +53,14 @@ void parallelMergeSort(vector<int>& arr, int left, int right) {
 }
 
 int main() {
-    const int N = 10000;
+    int N;
+    cout << "Please enter number of elements: ";
+    cin >> N;
+    if (N <= 0) {
+        cout << "Invalid input. Exiting." << endl;
+        return 1;
+    }
+
     vector<int> original(N);
     generate(original.begin(), original.end(), rand);
     vector<int> a1(N);
@@ -77,3 +84,8 @@ int main() {
 
 // Compile with: g++ -fopenmp hpc2_merge_sort.cpp
 // Run with: ./a.out or ./a.exe
+
+// input:
+// 15000
+
+// 15000- number of elements

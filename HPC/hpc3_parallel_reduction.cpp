@@ -69,3 +69,7 @@ int main() {
 
 // Compile with: g++ -fopenmp hpc3_parallel_reduction.cpp
 // Run with: ./a.out or ./a.exe
+
+// input:
+// 1000
+// 1000- number of elements in the array

@@ -31,7 +31,13 @@ void parallelBubbleSort(vector<int>& arr) {
 }
 
 int main() {
-    const int N = 20000;
+    int N;
+    cout << "Please enter number of elements: ";
+    cin >> N;
+    if (N <= 0) {
+        cout << "Invalid input. Exiting." << endl;
+        return 1;
+    }
     vector<int> original(N);
     generate(original.begin(), original.end(), rand);
     vector<int> a1(N);
@@ -56,3 +62,10 @@ int main() {
 
 // Compile with: g++ -fopenmp hpc2_bubble_sort.cpp
 // Run with: ./a.out or ./a.exe
+
+// input: 
+// 15000
+
+// 15000- number of elements
+// output: Sequential Bubble Sort: 0.123 sec
+//         Parallel Bubble Sort:   0.045 sec

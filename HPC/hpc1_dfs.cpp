@@ -55,3 +55,10 @@ int main() {
 
 // Compile with: g++ -fopenmp hpc1_dfs.cpp
 // Run with: ./a.out or ./a.exe
+
+// input:
+// 20 50 2
+
+// 20- number of vertices
+// 50- number of edges
+// 2- start node
